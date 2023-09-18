@@ -7,7 +7,6 @@ CREATE TABLE IF NOT EXISTS "categorias" (
 CREATE TABLE IF NOT EXISTS "products" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"nombre" varchar(256),
-	"categoria" varchar(256),
 	"precio" integer,
 	"valor" integer,
 	"stock" integer,
