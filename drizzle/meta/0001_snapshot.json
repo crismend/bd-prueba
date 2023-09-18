@@ -48,6 +48,12 @@
           "primaryKey": false,
           "notNull": false
         },
+        "categoria": {
+          "name": "nombre",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": false
+        },
         "precio": {
           "name": "precio",
           "type": "integer",
