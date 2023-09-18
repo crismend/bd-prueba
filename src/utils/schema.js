@@ -4,6 +4,7 @@ import { relations } from 'drizzle-orm'
 export const products = pgTable('products', {
   id: serial('id').primaryKey(),
   nombre: varchar('nombre', { length: 256 }),
+  categoria: varchar('categoria'),
   precio: integer('precio'),
   valor: integer('valor'),
   stock: integer('stock'),

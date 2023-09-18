@@ -20,7 +20,7 @@ export async function getProduct (req, res) {
 export async function createProduct (req, res) {
   const { nombre, precio, stock, valor } = req.body
 
-  const product = await db.insert(products).values({ nombre, precio, stock, valor }).returning()
+  const product = await db.insert(products).values({ nombre,categoria, precio, stock, valor }).returning()
 
   return res.status(200).json(product)
 }
